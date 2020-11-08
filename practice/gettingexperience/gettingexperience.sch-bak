@@ -2,7 +2,7 @@ EESchema Schematic File Version 4
 LIBS:gettingexperience-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -590,7 +590,7 @@ $EndComp
 Wire Wire Line
 	10050 5200 9950 5200
 Wire Wire Line
-	9250 5200 9550 5200
+	9250 5200 9450 5200
 Text GLabel 9500 4550 0    50   Input ~ 0
 BOOT0
 $Comp
@@ -4912,59 +4912,12 @@ Text GLabel 200  11950 0    39   Input ~ 0
 ROW4
 Text GLabel 200  12650 0    39   Input ~ 0
 ROW5
-$Comp
-L Connector:Conn_01x08_Male JBREAKOUT1
-U 1 1 60B24F91
-P 6000 6150
-F 0 "JBREAKOUT1" H 6108 6631 50  0000 C CNN
-F 1 "Conn_01x08_Male" H 6108 6540 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6000 6150 50  0001 C CNN
-F 3 "~" H 6000 6150 50  0001 C CNN
-	1    6000 6150
-	1    0    0    -1  
-$EndComp
-Text GLabel 6200 5850 2    39   Input ~ 0
-BREAKOUT1
-Text GLabel 6200 5950 2    39   Input ~ 0
-BREAKOUT2
-Text GLabel 6200 6050 2    39   Input ~ 0
-BREAKOUT3
-Text GLabel 6200 6150 2    39   Input ~ 0
-BREAKOUT4
-Text GLabel 6200 6250 2    39   Input ~ 0
-BREAKOUT5
-Text GLabel 6200 6350 2    39   Input ~ 0
-BREAKOUT6
-Text GLabel 6200 6450 2    39   Input ~ 0
-BREAKOUT7
-Text GLabel 6200 6550 2    39   Input ~ 0
-BREAKOUT8
 Text GLabel 13850 2300 2    50   Input ~ 0
 SWDIO
 Text GLabel 13850 2400 2    50   Input ~ 0
 SWCLK
-$Comp
-L MCU_ST_STM32F3:STM32F303RCTx U3
-U 1 1 60389791
-P 13150 2600
-F 0 "U3" H 13150 1400 50  0000 C CNN
-F 1 "STM32F303RCTx" H 13150 1300 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 12550 900 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf" H 13150 2600 50  0001 C CNN
-	1    13150 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13350 4400 13250 4400
 Wire Wire Line
 	13050 4400 13050 4500
-Connection ~ 13050 4400
-Connection ~ 13150 4400
-Wire Wire Line
-	13150 4400 13050 4400
-Connection ~ 13250 4400
-Wire Wire Line
-	13250 4400 13150 4400
 $Comp
 L power:GND #PWR036
 U 1 1 6046FD1A
@@ -4977,22 +4930,7 @@ F 3 "" H 13050 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13450 800  13350 800 
-Connection ~ 13050 800 
-Wire Wire Line
-	13050 800  12950 800 
-Connection ~ 13150 800 
-Wire Wire Line
-	13150 800  13050 800 
-Connection ~ 13250 800 
-Wire Wire Line
-	13250 800  13150 800 
-Connection ~ 13350 800 
-Wire Wire Line
-	13350 800  13250 800 
-Wire Wire Line
 	12950 800  12950 700 
-Connection ~ 12950 800 
 $Comp
 L power:+3.3V #PWR01
 U 1 1 606B257A
@@ -5066,30 +5004,17 @@ $EndComp
 Wire Wire Line
 	14450 1900 14450 1800
 $Comp
-L Device:R_Small R_RGB1
-U 1 1 608679FF
-P 14550 1200
-F 0 "R_RGB1" H 14491 1154 50  0000 R CNN
-F 1 "10k" H 14491 1245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14550 1200 50  0001 C CNN
-F 3 "~" H 14550 1200 50  0001 C CNN
-	1    14550 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR034
 U 1 1 60867A05
-P 14550 1300
-F 0 "#PWR034" H 14550 1150 50  0001 C CNN
-F 1 "+5V" H 14565 1473 50  0000 C CNN
-F 2 "" H 14550 1300 50  0001 C CNN
-F 3 "" H 14550 1300 50  0001 C CNN
-	1    14550 1300
+P 14550 3400
+F 0 "#PWR034" H 14550 3250 50  0001 C CNN
+F 1 "+5V" H 14565 3573 50  0000 C CNN
+F 2 "" H 14550 3400 50  0001 C CNN
+F 3 "" H 14550 3400 50  0001 C CNN
+	1    14550 3400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	14550 1100 14700 1100
-Text GLabel 14700 1100 2    50   Input ~ 0
+Text GLabel 14700 3200 2    50   Input ~ 0
 RGB
 Text GLabel 12450 4000 0    39   Input ~ 0
 COL7
@@ -5127,7 +5052,7 @@ Text GLabel 13850 3400 2    50   Input ~ 0
 LEDSTAT2
 Text GLabel 13850 3300 2    50   Input ~ 0
 LEDSTAT1
-Text GLabel 13850 3550 2    50   Input ~ 0
+Text GLabel 13850 3500 2    50   Input ~ 0
 LEDSTAT3
 Text GLabel 13850 2700 2    39   Input ~ 0
 ROW0
@@ -5137,10 +5062,9 @@ Text GLabel 13850 2900 2    39   Input ~ 0
 ROW2
 Text GLabel 13850 3000 2    39   Input ~ 0
 ROW3
-NoConn ~ 13850 4000
 Text GLabel 13850 3100 2    39   Input ~ 0
 ROW4
-Text GLabel 13850 3200 2    39   Input ~ 0
+Text GLabel 13850 3600 2    39   Input ~ 0
 ROW5
 NoConn ~ 12450 2300
 NoConn ~ 12450 2500
@@ -5210,6 +5134,77 @@ ISOENTERCOL
 Wire Wire Line
 	9750 10050 9750 11550
 Wire Wire Line
-	13850 1100 14550 1100
-Connection ~ 14550 1100
+	13350 4400 13250 4400
+Connection ~ 13250 4400
+Wire Wire Line
+	13250 4400 13150 4400
+Wire Wire Line
+	13150 4400 13050 4400
+Connection ~ 13150 4400
+Connection ~ 13050 4400
+Wire Wire Line
+	13450 800  13350 800 
+Connection ~ 13350 800 
+Wire Wire Line
+	13350 800  13250 800 
+Connection ~ 13250 800 
+Wire Wire Line
+	13250 800  13150 800 
+Connection ~ 13150 800 
+Wire Wire Line
+	13150 800  13050 800 
+Wire Wire Line
+	13050 800  12950 800 
+Connection ~ 13050 800 
+Connection ~ 12950 800 
+$Comp
+L MCU_ST_STM32F3:STM32F303RCTx U3
+U 1 1 60389791
+P 13150 2600
+F 0 "U3" H 13150 1400 50  0000 C CNN
+F 1 "STM32F303RCTx" H 13150 1300 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 12550 900 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf" H 13150 2600 50  0001 C CNN
+	1    13150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_RESET1
+U 1 1 5FCA4C3C
+P 9750 5400
+F 0 "C_RESET1" V 9521 5400 50  0000 C CNN
+F 1 "100nF" V 9612 5400 50  0000 C CNN
+F 2 "" H 9750 5400 50  0001 C CNN
+F 3 "~" H 9750 5400 50  0001 C CNN
+	1    9750 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 5200 9450 5400
+Wire Wire Line
+	9450 5400 9650 5400
+Connection ~ 9450 5200
+Wire Wire Line
+	9450 5200 9550 5200
+Wire Wire Line
+	9850 5400 9950 5400
+Wire Wire Line
+	9950 5400 9950 5200
+Connection ~ 9950 5200
+Connection ~ 14550 3200
+Wire Wire Line
+	13850 3200 14550 3200
+Wire Wire Line
+	14550 3200 14700 3200
+$Comp
+L Device:R_Small R_RGB1
+U 1 1 608679FF
+P 14550 3300
+F 0 "R_RGB1" H 14491 3254 50  0000 R CNN
+F 1 "10k" H 14491 3345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 14550 3300 50  0001 C CNN
+F 3 "~" H 14550 3300 50  0001 C CNN
+	1    14550 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -4972,21 +4972,21 @@ F 3 "~" H 14450 2000 50  0001 C CNN
 	1    14450 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 13850 1900 2    39   Input ~ 0
+Text GLabel 13850 2000 2    39   Input ~ 0
 COL18
-Text GLabel 13850 1800 2    39   Input ~ 0
+Text GLabel 13850 1900 2    39   Input ~ 0
 COL17
-Text GLabel 13850 1700 2    39   Input ~ 0
+Text GLabel 13850 1800 2    39   Input ~ 0
 COL16
-Text GLabel 13850 1600 2    39   Input ~ 0
+Text GLabel 13850 1700 2    39   Input ~ 0
 COL15
-Text GLabel 13850 1500 2    39   Input ~ 0
-COL14
 Text GLabel 13850 1400 2    39   Input ~ 0
-COL13
+COL14
 Text GLabel 13850 1300 2    39   Input ~ 0
-COL12
+COL13
 Text GLabel 13850 1200 2    39   Input ~ 0
+COL12
+Text GLabel 13850 1100 2    39   Input ~ 0
 COL11
 Text GLabel 13850 1000 2    39   Input ~ 0
 COL10
@@ -5006,15 +5006,15 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR034
 U 1 1 60867A05
-P 14550 1300
-F 0 "#PWR034" H 14550 1150 50  0001 C CNN
-F 1 "+5V" H 14565 1473 50  0000 C CNN
-F 2 "" H 14550 1300 50  0001 C CNN
-F 3 "" H 14550 1300 50  0001 C CNN
-	1    14550 1300
+P 14550 3400
+F 0 "#PWR034" H 14550 3250 50  0001 C CNN
+F 1 "+5V" H 14565 3573 50  0000 C CNN
+F 2 "" H 14550 3400 50  0001 C CNN
+F 3 "" H 14550 3400 50  0001 C CNN
+	1    14550 3400
 	-1   0    0    1   
 $EndComp
-Text GLabel 14700 1100 2    50   Input ~ 0
+Text GLabel 14700 3200 2    50   Input ~ 0
 RGB
 Text GLabel 12450 4000 0    39   Input ~ 0
 COL7
@@ -5064,7 +5064,7 @@ Text GLabel 13850 3000 2    39   Input ~ 0
 ROW3
 Text GLabel 13850 3100 2    39   Input ~ 0
 ROW4
-Text GLabel 13850 3200 2    39   Input ~ 0
+Text GLabel 13850 3600 2    39   Input ~ 0
 ROW5
 NoConn ~ 12450 2300
 NoConn ~ 12450 2500
@@ -5191,20 +5191,22 @@ Wire Wire Line
 Wire Wire Line
 	9950 5400 9950 5200
 Connection ~ 9950 5200
-Connection ~ 14550 1100
+Connection ~ 14550 3200
 Wire Wire Line
-	13850 1100 14550 1100
+	13850 3200 14550 3200
 Wire Wire Line
-	14550 1100 14700 1100
+	14550 3200 14700 3200
 $Comp
 L Device:R_Small R_RGB1
 U 1 1 608679FF
-P 14550 1200
-F 0 "R_RGB1" H 14491 1154 50  0000 R CNN
-F 1 "10k" H 14491 1245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14550 1200 50  0001 C CNN
-F 3 "~" H 14550 1200 50  0001 C CNN
-	1    14550 1200
+P 14550 3300
+F 0 "R_RGB1" H 14491 3254 50  0000 R CNN
+F 1 "10k" H 14491 3345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 14550 3300 50  0001 C CNN
+F 3 "~" H 14550 3300 50  0001 C CNN
+	1    14550 3300
 	1    0    0    -1  
 $EndComp
+NoConn ~ 13850 1500
+NoConn ~ 13850 1600
 $EndSCHEMATC
